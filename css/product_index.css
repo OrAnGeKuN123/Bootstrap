@@ -1,0 +1,197 @@
+.product-title > .container .pro-tit-inner {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.product-title > .container .pro-tit-inner .pro-cont {
+  margin: 0 auto;
+  padding: 0 50px;
+  display: inline-block;
+  width: 100%;
+  height: 75px;
+}
+.product-title > .container .pro-tit-inner .pro-cont {
+
+  cursor: pointer;
+}
+.product-title > .container .pro-tit-inner .pro-cont > li {
+  width: 80px;
+  float: left;
+  list-style: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 75px;
+}
+.product-title > .container .pro-tit-inner .pro-cont > li a {
+  display: block;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 0 15px;
+  color: inherit;
+}
+.product-title > .container .pro-tit-inner .pro-cont > li a:hover,
+.product-title > .container .pro-tit-inner .pro-cont > li a:focus {
+  color: #00a971;
+}
+.more-prodcuts {
+  margin-top: 20px;
+}
+.more-prodcuts > .container > h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  display: flex;
+}
+.more-prodcuts > .container > h2::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  background-color: #00a971;
+  margin-right: 10px;
+  align-self: center;
+}
+.more-prodcuts > .container > .pro-items {
+  list-style: none;
+  padding: 0;
+}
+.more-prodcuts > .container > .pro-items > li {
+  float: left;
+  padding: 10px;
+}
+.more-prodcuts > .container > .pro-items > li > a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+.more-prodcuts > .container > .pro-items > li > a:hover {
+  box-shadow: 0, 0, 16px, #b1b1b1;
+}
+.more-prodcuts > .container > .pro-items > li > a:hover > .img {
+  transform: translate(10px, -10px);
+  box-shadow: 0 0 16px #333;
+}
+.more-prodcuts > .container > .pro-items > li > a:hover > h2 > p {
+  color: #003f70;
+}
+.more-prodcuts > .container > .pro-items > li > a:hover > h2 > span > em {
+  opacity: 1;
+  transform: translateX(0);
+}
+.more-prodcuts > .container > .pro-items > li > a:hover > h2 > span > i {
+  color: #003f70;
+}
+.more-prodcuts > .container > .pro-items > li > a:hover > h2 > span > i::after {
+  height: 0;
+  top: 50%;
+}
+.more-prodcuts > .container > .pro-items > li > a:hover::after {
+  width: 100%;
+}
+.more-prodcuts > .container > .pro-items > li > a > .img {
+  width: 100%;
+  transition: ease 0.65s;
+}
+.more-prodcuts > .container > .pro-items > li > a > .img > img {
+  width: 100%;
+  display: block;
+}
+.more-prodcuts > .container > .pro-items > li > a > h2 {
+  font-size: 16px;
+  margin-top: 15px;
+  height: 20px;
+  line-height: 20px;
+  color: #333;
+  position: relative;
+}
+.more-prodcuts > .container > .pro-items > li > a > h2 > p {
+  margin: 0;
+  max-width: 75%;
+  text-align: center;
+}
+@media screen and (max-width: 540px) {
+  .more-prodcuts > .container > .pro-items > li > a > h2 > p {
+    padding-right: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 380px) {
+  .more-prodcuts > .container > .pro-items > li > a > h2 > p {
+    visibility: hidden;
+  }
+}
+.more-prodcuts > .container > .pro-items > li > a > h2 > span {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  font-size: 14px;
+  color: #cdcdcd;
+}
+.more-prodcuts > .container > .pro-items > li > a > h2 > span > em {
+  margin-right: 10px;
+  opacity: 0;
+  display: inline-block;
+  transform: translateX(-20px);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  color: #003f70;
+  transition: ease 0.65s;
+}
+@media screen and (max-width: 540px) {
+  .more-prodcuts > .container > .pro-items > li > a > h2 > span > em {
+    opacity: 1;
+  }
+}
+.more-prodcuts > .container > .pro-items > li > a > h2 > span > i {
+  position: relative;
+  font-size: 18px;
+  top: 1px;
+  color: #666;
+}
+.more-prodcuts > .container > .pro-items > li > a > h2 > span > i::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: #666;
+  position: absolute;
+  left: -5px;
+  top: 0;
+  transition: ease 0.65s;
+}
+@media screen and (max-width: 540px) {
+  .more-prodcuts > .container > .pro-items > li > a > h2 > span > i::after {
+    height: 0;
+  }
+}
+.more-prodcuts > .container > .pro-items > li > a > h3 {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+.more-prodcuts > .container > .pro-items > li > a > h3 > p {
+  margin: 0 10px;
+}
+@media screen and (max-width: 540px) {
+  .more-prodcuts > .container > .pro-items > li > a > h3 > p {
+    display: none;
+  }
+}
+.more-prodcuts > .container > .pro-items > li > a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  display: block;
+  background-color: #003f70;
+  left: 0;
+  bottom: -1px;
+  transition: ease 0.65s;
+}
+

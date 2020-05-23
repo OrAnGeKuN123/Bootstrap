@@ -1,0 +1,278 @@
+/* 轮播图样式 */
+.mobileimg {
+  width: 100%;
+  display: block;
+}
+.mobileimg > img {
+  width: 100%;
+  display: block;
+}
+.item > .pcimg {
+  display: block;
+  width: 100%;
+  height: 410px;
+  background-position: center center;
+  background-size: cover;
+}
+.item > .carousel-caption {
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #000;
+  line-height: 20px;
+}
+/* 信息模块 */
+.IOT-info {
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.IOT-info > .container > .row {
+  color: #003f70;
+  text-decoration: none;
+  text-align: center;
+}
+.IOT-info > .container > .row a {
+  color: #003f70;
+}
+.IOT-info > .container > .row a:hover {
+  color: #003f70;
+  text-decoration: none;
+}
+.IOT-info > .container > .row a:focus {
+  text-decoration: none;
+}
+.IOT-info > .container > .row .iconfont {
+  font-size: 32px;
+}
+/* 产品服务 */
+.proServ {
+  text-align: center;
+}
+.proServ .pro-cont {
+  margin-top: 15px;
+  padding: 0;
+}
+.pro-cont > a {
+  display: block;
+  width: 100%;
+}
+.pro-cont > a > img {
+  width: 100%;
+}
+.pro-cont > a > .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.pro-cont > a > .mask > .mask-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+.pro-cont > a > .mask > .mask-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  bottom: 0;
+  text-align: center;
+}
+.pro-cont > a > .mask > .mask-text > .iconfont {
+  font-size: 48px;
+  color: #00a971;
+}
+.pro-cont > a > .mask > .mask-text > .littleLine {
+  width: 20px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 1px;
+}
+.pro-cont > a > .mask > .mask-text > h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.pro-cont > a > .mask > .mask-text > .more {
+  color: #fff;
+}
+.pro-cont > a > .mask > .mask-text > .more > p {
+  padding: 20px;
+}
+.pro-cont > a > .mask > .mask-text > .more > span {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width:550px) {
+    .pro-cont > a > .mask > .mask-text > .more > p {
+        display: none;
+      }
+}
+@media screen and (max-width:768px) {
+    .pro-cont > a > .mask > .mask-text {
+        top: 100px;
+    }
+}
+@media screen and (max-width:320px) {
+    .pro-cont > a > .mask > .mask-text {
+        top: 40px;
+    }
+    .pro-cont > a > .mask > .mask-text > .more  {
+        display: none;
+      }
+}
+@media screen and (min-width:992px) and (max-width: 1200px) {
+    .pro-cont > a > .mask > .mask-text {
+        top: 70px;
+    }
+    .pro-cont > a > .mask > .mask-text > .more > span {
+        display: none;
+      }
+}
+/* 解决方案 */
+.solution-case {
+  margin-top: 50px;
+}
+.solution-case > h2 {
+  text-align: center;
+}
+.solution-case > .tabs-parent {
+  width: 100%;
+  overflow: hidden;
+}
+.solution-case .solution-tab {
+  margin-top: 20px;
+}
+.solution-case .nav-tabs > li > a {
+  border-radius: 0;
+  border: none;
+  background-color: #2d1d58;
+  color: #fff;
+}
+.solution-case .nav-tabs > li > a > .iconfont {
+  display: block;
+  text-align: center;
+  font-size: 32px;
+}
+.solution-case .nav-tabs > li.active > a,
+.solution-case .nav-tabs > li.active a:hover,
+.solution-case .nav-tabs > li.active a:focus {
+  border: none;
+  border-radius: 0;
+  background-color: #00a971;
+  color: #fff;
+}
+.solution-case .tab-content .tab-pane {
+  background: url(../images/casebg_01.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+.solution-case .tab-content .tab-pane .tab-pane-inner {
+  padding: 50px;
+  position: relative;
+}
+.solution-case .tab-content .tab-pane .tab-pane-inner > .solu-dec {
+  overflow: hidden;
+}
+.solution-case .tab-content .tab-pane .tab-pane-inner > .solu-dec > h2 {
+  margin-top: 10px;
+}
+.solution-case .tab-content .tab-pane .tab-pane-inner > .solu-dec > p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.solution-case .tab-content .tab-pane .tab-pane-inner > .morecase {
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.solution-case .tab-content .tab-pane .tab-pane-inner > .casePic {
+  padding-top: 35px;
+}
+.solution-case .tab-content .tab-pane .tab-pane-inner > .casePic .caseImg {
+  padding: 0;
+}
+.solution-case .tab-content .tab-pane .tab-pane-inner > .casePic .caseImg > li {
+  list-style: none;
+  float: left;
+  text-align: center;
+}
+.solution-case .tab-content .tab-pane .tab-pane-inner > .casePic .caseImg > li > span {
+  display: block;
+}
+/*新闻模块*/
+.news-list > .news-inner > h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.news-list > .news-inner > .news-des {
+  padding: 0;
+}
+.news-list > .news-inner > .news-des > li {
+  width: 25%;
+  float: left;
+  list-style: none;
+  padding: 10px 15px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.news-list > .news-inner > .news-des > li:nth-child(4) {
+  border-right: 0;
+}
+.news-list > .news-inner > .news-des > li:nth-child(5) {
+  border-bottom: 0;
+}
+.news-list > .news-inner > .news-des > li:nth-child(6) {
+  border-bottom: 0;
+}
+.news-list > .news-inner > .news-des > li:nth-child(7) {
+  border-bottom: 0;
+}
+.news-list > .news-inner > .news-des > li:last-child {
+  border-right: 0;
+  border-bottom: 0;
+}
+.news-list > .news-inner > .news-des > li > .newslink {
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.news-list > .news-inner > .news-des > li > .newslink:hover {
+  color: #00a971;
+}
+.news-list > .news-inner > .news-des > li > .newslink > i {
+  color: #003f70;
+  font-size: 32px;
+}
+.news-list > .news-inner > .news-des > li > .newslink > span {
+  font-size: 16px;
+  line-height: 16px;
+}
+@media screen and (max-width: 768px) {
+  .news-list > .container > .news-des > li {
+    width: 50%;
+    float: left;
+    list-style: none;
+    border: none;
+  }
+}
+@media screen and (max-width: 489px) {
+  .news-list > .container > .news-des > li {
+    width: 100%;
+  }
+}

@@ -1,0 +1,90 @@
+.news > .container > .row > .news-list > h2 {
+  font-size: 20px;
+  color: #003f70;
+  margin-left: 10px;
+}
+.news > .container > .row > .news-list > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.news > .container > .row > .news-list > ul > li {
+  padding: 30px;
+  border-bottom: 1px solid #003f70;
+}
+.news > .container > .row > .news-list > ul > li > .img-dec {
+  float: left;
+  width: 25%;
+}
+.news > .container > .row > .news-list > ul > li > .img-dec > a:first-child {
+  width: 100%;
+  display: block;
+}
+.news > .container > .row > .news-list > ul > li > .img-dec > a:first-child > img {
+  width: 100%;
+}
+.news > .container > .row > .news-list > ul > li > .img-dec > .more {
+  margin-top: 50px;
+  position: relative;
+}
+.news > .container > .row > .news-list > ul > li > .img-dec > .more > a {
+  text-decoration: none;
+  border: 1px solid #003f70;
+  color: #003f70;
+  border-radius: 5px;
+  padding: 5px 25px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.news > .container > .row > .news-list > ul > li > .img-dec > .more > a::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #003f70;
+  transition: ease 0.65s;
+  border-left: 1px;
+  border-radius: 5px;
+  z-index: -1;
+}
+.news > .container > .row > .news-list > ul > li > .img-dec > .more > a:hover {
+  color: #fff;
+}
+.news > .container > .row > .news-list > ul > li > .img-dec > .more > a:hover::after {
+  width: 100%;
+  border: 1px solid #003f70;
+}
+.news > .container > .row > .news-list > ul > li > .text-dec {
+  float: right;
+  width: 75%;
+}
+.news > .container > .row > .news-list > ul > li > .text-dec > p {
+  color: #888;
+}
+.news > .container > .row > .news-list > ul > li > .text-dec > .time {
+  font-size: 20px;
+  color: #003f70;
+}
+@media screen and (max-width: 992px) {
+  .news .container .row .news-list > ul > li > .img-dec {
+    float: none;
+    width: 100%;
+  }
+  .news .container .row .news-list > ul > li > .text-dec {
+    float: none;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .news .container .row .news-list > ul > li > .text-dec > p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}

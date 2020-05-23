@@ -1,0 +1,14 @@
+.about .container .row {
+  margin-top: 50px;
+  padding: 0;
+}
+.about .container .row .about-des {
+  text-align: center;
+  color: #003f70;
+}
+.about .container .row .about-des > .about-img {
+  width: 100%;
+}
+.about .container .row .about-des > .about-img > img {
+  width: 100%;
+}

@@ -1,0 +1,41 @@
+.form-sheet .container {
+  max-width: 800px;
+}
+.form-sheet .container .row > .form-inner {
+  padding: 30px;
+  box-sizing: inherit;
+}
+.form-sheet .container .row > .form-inner > form {
+  box-sizing: inherit;
+}
+.form-sheet .container .row > .form-inner > form > div {
+  box-sizing: inherit;
+  margin-bottom: 1.429rem;
+}
+.form-sheet .container .row > .form-inner > form > div > input {
+  width: 100%;
+  height: 2.573rem;
+  font-size: 1rem;
+  padding: 0.429rem 0.929rem;
+  color: #76838f;
+  border: 1px solid #ccc;
+}
+.form-sheet .container .row > .form-inner > form > div > textarea {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 125px;
+  font-size: 1rem;
+  padding: 0.429rem 0.929rem;
+  color: #76838f;
+  resize: none;
+  border: 1px solid #ccc;
+}
+.form-sheet .container .row > .form-inner > form > div > button {
+  width: 100%;
+  display: block;
+  background-color: #003f70;
+  color: #fff;
+  border: none;
+  padding: 0.715rem 1.286rem;
+}

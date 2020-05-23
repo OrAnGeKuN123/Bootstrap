@@ -1,0 +1,60 @@
+.support .container .row ul {
+  list-style: none;
+  padding: 0;
+}
+.support .container .row ul li {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.support .container .row ul li .description {
+  float: left;
+}
+.support .container .row ul li .description > span {
+  float: left;
+  font-size: 26px;
+}
+.support .container .row ul li .description > .tit-cont {
+  margin-left: 5px;
+  float: right;
+}
+.support .container .row ul li .description > .tit-cont > h4 {
+  font-size: 16px;
+  margin: 0;
+}
+.support .container .row ul li .description > .tit-cont > span {
+  color: #999;
+}
+.support .container .row ul li .description > .tit-cont > span:last-child {
+  margin-left: 5px;
+}
+.support .container .row ul li .download {
+  float: right;
+  margin: 0 10px;
+  padding: 5px 15px;
+  border: 1px solid #003f70;
+  color: #003f70;
+  position: relative;
+}
+.support .container .row ul li .download::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: -1;
+  transition: ease-in 0.5s;
+}
+.support .container .row ul li .download:hover {
+  color: #fff;
+}
+.support .container .row ul li .download:hover > button {
+  background-color: #00a971;
+}
+.support .container .row ul li .download:hover::after {
+  width: 100%;
+  background-color: #00a971;
+}

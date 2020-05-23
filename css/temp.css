@@ -1,0 +1,39 @@
+/*注释 会编译*/
+/*变量  @变量名:值;*/
+a {
+  color: #e92322;
+}
+/*混入 可以将一个定义好的样式引入到另一个样式中
+类似于函数的调用*/
+div {
+  width: 100px;
+  height: 100px;
+  /*引入写好的圆角样式*/
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/*嵌套:实现选择器的继承，节省代码量，同时使代码结构清晰*/
+.header {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #333;
+}
+.header > div {
+  width: 100%;
+}
+.header > div > h3 {
+  font-size: 22px;
+}
+.header > div > h3:hover {
+  display: none;
+}
+.header > div > a {
+  text-decoration: none;
+}
+.header > div > a::before {
+  display: none;
+}
